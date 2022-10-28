@@ -1,0 +1,122 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.container-admin{
+    
+    border:none;
+    width: 100%;
+    height: auto;
+}
+header{
+    height:80px;
+    background: #90cdd6;
+}
+.left{
+    width:20%;
+    float: left;
+    height:80px;
+    
+}
+.left h1{
+    margin-left:20px;
+    margin-top: 20px;
+}
+.left-section{
+    width:20%;
+    height:500px;
+    background-color: #90cdd6;
+    float: left;
+} 
+.right-section{
+    
+    width:80%;
+    height: 500px;
+    
+    background-color: #B2BABB;
+    margin-top: -1px;
+    float: right;
+    border: none;
+}
+.left-section li{
+    list-style: none;
+    line-height: 40px;
+    padding: 0 20px;
+    cursor: pointer;
+}
+.left-section li:hover{
+    background-color: cyan;
+}
+.left-section a{
+    text-decoration: none;
+}
+i{
+    color:blue;
+}
+.dropdown{
+    float: right;
+    margin-right: 40px;
+}
+.header{
+    float: right;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+
+
+
+
+/* -------admin form mamber---------- */
+
+
+.form{
+    margin-left: 50px;
+}
+.form>label{
+   font-size: 15px;
+   font-weight: 500;
+   font-family: initial;
+}
+.form>input{
+    width: 80%;
+    border: none;
+    border: 20%;
+}
+.form>select{
+    width: 20%;
+    border: none;
+    border: 20%;
+    margin-left: 20px;
+}
+.field-icon {
+    float: right;
+    /* margin-left: 102px; */
+    margin-top: -18px;
+    position: relative;
+    z-index: 2;
+    margin-right: 201px;
+  }
+  
+.form>button{
+    width: 100px;
+    border: none;
+    border: 20%;
+    background-color: salmon;
+    color: white;
+    height: 35px;
+}
+.form>button:hover{
+    background-color: saddlebrown;
+    color: black;
+}
+
+#addmember{
+    padding: 10px 10px;
+    border-radius: 5px;
+    background: #fff;
+    text-decoration: none;
+    margin-left: 35px;
+}
+.table-member{
+    margin-top: 30px;
+}
