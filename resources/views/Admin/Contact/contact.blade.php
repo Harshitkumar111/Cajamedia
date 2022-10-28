@@ -14,6 +14,7 @@
           <tr>
             <th scope="col">Sn</th>
             <th scope="col">Name</th>
+            <th scope="col">Message</th>
             <th scope="col">Email</th>
             <th scope="col">Phone Number</th>
             <th scope="col">Address</th>
@@ -26,9 +27,9 @@
                     <tr>
                         <td>{{$counter}}</td>
                         <td>{{$contact->first_name}} {{$contact->last_name}}</td>
+                        <td>{{$contact->message}}</td>
                         <td>{{$contact->email}}</td>
                         <td>{{$contact->phone_number}}</td>
-                        
                         <td>{{$contact->address}}</td>
                         <td><a href="/deletecontact/{{$contact->id}}"><i class="fa-solid fa-trash"></i></a>
                       </td>
