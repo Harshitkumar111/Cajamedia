@@ -89,6 +89,10 @@ Route::get('/delete_payment/{id}', [App\Http\Controllers\Admin\OrderManagmentCon
 Route::get('/edit_payment/{id}', [App\Http\Controllers\Admin\OrderManagmentController::class, 'edit_payment_details'])->name('edit_payment/{id}');
 Route::POST('/update_payment_details/{id}', [App\Http\Controllers\Admin\OrderManagmentController::class, 'update_payment_details'])->name('update_payment_details/{id}');
 
+// contact managment------------------------------------
+Route::get('/contact', [App\Http\Controllers\Admin\ContactManagmentController::class, 'contact'])->name('contact');
+Route::get('/deletecontact/{id}', [App\Http\Controllers\Admin\ContactManagmentController::class, 'deletecontact'])->name('deletecontact/{id}');
+
 
 });
 Route::middleware(['User'])->group(function () {

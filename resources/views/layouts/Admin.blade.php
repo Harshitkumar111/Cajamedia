@@ -76,6 +76,7 @@
 
      <a href="/order"><li><i class="fa-brands fa-first-order"></i></i>&nbsp &nbsp Management Order</li></a>
      <a href="/payment"><li><i class="fa-brands fa-cc-amazon-pay"></i></i>&nbsp &nbsp Payment</li></a>
+     <a href="/contact"><li><i class="fa-solid fa-address-book"></i></i>&nbsp &nbsp contact Mangmeent</li></a>
 
     {{-- <a href="/admin">Dashboard</a><br>
     <a href="/fetchuser">User Mangmeent</a><br>
