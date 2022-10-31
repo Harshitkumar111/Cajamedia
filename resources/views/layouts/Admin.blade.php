@@ -20,6 +20,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="/css/Admin.css">
     
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.ckeditor.com/4.19.0/standard/ckeditor.js"></script>
 </head>
 <body>
     
@@ -66,22 +69,26 @@
     {{-- <hr> --}}
    <div class="left-section"  >
      <a href="/admin" > <li><i class="fa-solid fa-house-user" ></i>&nbsp &nbsp Dashboard</li> </a>
-     <a href="/fetchuser"><li><i class="fa-solid fa-recycle"></i>&nbsp &nbsp User Mangmeent</li></a>
+     <a href="/fetchuser"><li><i class="fa-solid fa-recycle"></i>&nbsp &nbsp User Management</li></a>
      <a href="/country"> <li><i class="fa-solid fa-globe"></i></i>&nbsp &nbsp Country</li></a>
      <a href="/state"><li><i class="fa-regular fa-building"></i></i>&nbsp &nbsp State</li></a>
      <a href="/city"><li><i class="fa-solid fa-city"></i>&nbsp &nbsp City</li></a>
      <a href="/product"><li><i class="fa-solid fa-people-roof"></i></i>&nbsp &nbsp Manage Product</li></a>
      <a href="/product_category"><li><i class="fa-solid fa-list-check"></i></i>&nbsp &nbsp Product Catagory</li></a>
      <a href="/discount"><li><i class="fa-solid fa-percent"></i></i>&nbsp &nbsp Product Discount</li></a>
-
      <a href="/order"><li><i class="fa-brands fa-first-order"></i></i>&nbsp &nbsp Management Order</li></a>
      <a href="/payment"><li><i class="fa-brands fa-cc-amazon-pay"></i></i>&nbsp &nbsp Payment</li></a>
-     <a href="/contact"><li><i class="fa-solid fa-address-book"></i></i>&nbsp &nbsp contact Mangmeent</li></a>
+     <a href="/contact"><li><i class="fa-solid fa-address-book"></i></i>&nbsp &nbsp contact Management</li></a>     
+     <a href="/page"><li><i class="fa-solid fa-address-book"></i></i>&nbsp &nbsp Pages Management</li></a>
+     <a href="/post"><li><i class="fa-solid fa-address-book"></i></i>&nbsp &nbsp Post Management</li></a>
+     <a href="/seo"><li><i class="fa-solid fa-address-book"></i></i>&nbsp &nbsp SEO Management</li></a>
+     <a href="/site"><li><i class="fa-solid fa-address-book"></i></i>&nbsp &nbsp Site Management</li></a>
 
-    {{-- <a href="/admin">Dashboard</a><br>
-    <a href="/fetchuser">User Mangmeent</a><br>
-    <a href="/state">State</a><br>
-    <a href="/city">City</a> --}}
+
+        {{-- <a href="/admin">Dashboard</a><br>
+        <a href="/fetchuser">User Mangmeent</a><br>
+        <a href="/state">State</a><br>
+        <a href="/city">City</a> --}}
     
    </div>
    <div class="right-section">

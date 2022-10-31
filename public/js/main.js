@@ -8,5 +8,5 @@ $(".toggle-password").click(function() {
       input.attr("type", "password");
     }
   });
-
-
+ 
+ CKEDITOR.replace('pagedescription');
