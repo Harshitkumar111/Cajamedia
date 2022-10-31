@@ -79,10 +79,10 @@
      <a href="/order"><li><i class="fa-brands fa-first-order"></i></i>&nbsp &nbsp Management Order</li></a>
      <a href="/payment"><li><i class="fa-brands fa-cc-amazon-pay"></i></i>&nbsp &nbsp Payment</li></a>
      <a href="/contact"><li><i class="fa-solid fa-address-book"></i></i>&nbsp &nbsp contact Management</li></a>     
-     <a href="/page"><li><i class="fa-solid fa-address-book"></i></i>&nbsp &nbsp Pages Management</li></a>
-     <a href="/post"><li><i class="fa-solid fa-address-book"></i></i>&nbsp &nbsp Post Management</li></a>
-     <a href="/seo"><li><i class="fa-solid fa-address-book"></i></i>&nbsp &nbsp SEO Management</li></a>
-     <a href="/site"><li><i class="fa-solid fa-address-book"></i></i>&nbsp &nbsp Site Management</li></a>
+     <a href="/page"><li><i class="fa-regular fa-address-card"></i></i>&nbsp &nbsp Pages Management</li></a>
+     <a href="/post"><li><i class="fa-solid fa-pager"></i></i>&nbsp &nbsp Post Management</li></a>
+     <a href="/seo"><li><i class="fa-solid fa-server"></i></i>&nbsp &nbsp SEO Management</li></a>
+     <a href="/site"><li><i class="fa-solid fa-satellite-dish"></i></i>&nbsp &nbsp Site Management</li></a>
 
 
         {{-- <a href="/admin">Dashboard</a><br>
