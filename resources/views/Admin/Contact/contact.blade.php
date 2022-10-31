@@ -24,18 +24,17 @@
         <tbody>
              <?php $counter = 1; ?>
             @foreach ($Contact as $contact)
-                    <tr>
+                     <tr>
                         <td>{{$counter}}</td>
                         <td>{{$contact->first_name}} {{$contact->last_name}}</td>
                         <td>{{$contact->message}}</td>
                         <td>{{$contact->email}}</td>
                         <td>{{$contact->phone_number}}</td>
                         <td>{{$contact->address}}</td>
-                        <td><a href="/deletecontact/{{$contact->id}}"><i class="fa-solid fa-trash"></i></a>
-                      </td>
+                        <td><a href="/deletecontact/{{$contact->id}}"><i class="fa-solid fa-trash"></i></a></td>                     
                       </tr>
                       <?php   $counter++; ?>
-                    @endforeach
+             @endforeach
         </tbody>
       </table>
     </div>

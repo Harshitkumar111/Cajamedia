@@ -94,6 +94,36 @@ Route::get('/contact', [App\Http\Controllers\Admin\ContactManagmentController::c
 Route::get('/deletecontact/{id}', [App\Http\Controllers\Admin\ContactManagmentController::class, 'deletecontact'])->name('deletecontact/{id}');
 
 
+// page managment---------------------------------
+Route::get('/page', [App\Http\Controllers\Admin\PageManagementController::class, 'page'])->name('page');
+Route::get('/Addpage', [App\Http\Controllers\Admin\PageManagementController::class, 'Addpage'])->name('Addpage');
+Route::POST('/savepage', [App\Http\Controllers\Admin\PageManagementController::class, 'savepage'])->name('savepage');
+Route::get('/deletepage/{id}', [App\Http\Controllers\Admin\PageManagementController::class, 'deletepage'])->name('deletepage/{id}');
+Route::get('/editpage/{id}', [App\Http\Controllers\Admin\PageManagementController::class, 'editpage'])->name('editpage/{id}');
+Route::POST('/updatepage/{id}', [App\Http\Controllers\Admin\PageManagementController::class, 'updatepage'])->name('updatepage/{id}');
+
+// Post management ------------------------------------------------
+Route::get('/post', [App\Http\Controllers\Admin\PostManagementController::class, 'post'])->name('post');
+Route::get('/Addpost', [App\Http\Controllers\Admin\PostManagementController::class, 'Addpost'])->name('Addpost');
+Route::POST('/savepost', [App\Http\Controllers\Admin\PostManagementController::class, 'savepost'])->name('savepost');
+Route::get('/deletepost/{id}', [App\Http\Controllers\Admin\PostManagementController::class, 'deletepost'])->name('deletepost/{id}');
+Route::get('/editpost/{id}', [App\Http\Controllers\Admin\PostManagementController::class, 'editpost'])->name('editpost/{id}');
+Route::POST('/updatepost/{id}', [App\Http\Controllers\Admin\PostManagementController::class, 'updatepost'])->name('updatepost/{id}');
+
+// Site  management-----------------------------------------------------------
+Route::get('/site', [App\Http\Controllers\Admin\SiteManagementController::class, 'index'])->name('site');
+Route::get('/Addsite', [App\Http\Controllers\Admin\SiteManagementController::class, 'Addsite'])->name('Addsite');
+Route::POST('/savesite', [App\Http\Controllers\Admin\SiteManagementController::class, 'save'])->name('savesite');
+Route::get('/editsite/{id}', [App\Http\Controllers\Admin\SiteManagementController::class, 'editsite'])->name('editsite/{id}');
+Route::POST('/updatesite/{id}', [App\Http\Controllers\Admin\SiteManagementController::class, 'updatesite'])->name('updatesite/{id}');
+Route::get('/deletesite/{id}', [App\Http\Controllers\Admin\SiteManagementController::class, 'deletesite'])->name('deletesite/{id}');
+
+// SEo management -------------------------------------------------------------
+Route::get('/seo', [App\Http\Controllers\Admin\SEOManagementController::class, 'index'])->name('seo');
+Route::POST('/saveseo', [App\Http\Controllers\Admin\SEOManagementController::class, 'store'])->name('saveseo');
+
+
+
 });
 Route::middleware(['User'])->group(function () {
     Route::get('/user', [App\Http\Controllers\User\DashboardController::class, 'index'])->name('user');

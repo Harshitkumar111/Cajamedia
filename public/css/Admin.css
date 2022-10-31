@@ -24,14 +24,14 @@ header{
 }
 .left-section{
     width:20%;
-    height:500px;
+    height:auto;
     background-color: #90cdd6;
     float: left;
 } 
 .right-section{
     
     width:80%;
-    height: 500px;
+    height: auto;
     
     background-color: #B2BABB;
     margin-top: -1px;
