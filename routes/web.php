@@ -122,6 +122,18 @@ Route::get('/deletesite/{id}', [App\Http\Controllers\Admin\SiteManagementControl
 Route::get('/seo', [App\Http\Controllers\Admin\SEOManagementController::class, 'index'])->name('seo');
 Route::POST('/saveseo', [App\Http\Controllers\Admin\SEOManagementController::class, 'store'])->name('saveseo');
 
+// Email management----------------------------------------------------------
+Route::get('/email', [App\Http\Controllers\Admin\EmailManagementController::class, 'email'])->name('email');
+Route::get('/addemail', [App\Http\Controllers\Admin\EmailManagementController::class, 'addemail'])->name('addemail');
+Route::POST('/saveemail', [App\Http\Controllers\Admin\EmailManagementController::class, 'saveemail'])->name('saveemail');
+
+// ajax ----------------------------------------------------------
+Route::get('/ajax', [App\Http\Controllers\Admin\ajaxController::class, 'index'])->name('index');
+Route::POST('/saveajax', [App\Http\Controllers\Admin\ajaxController::class, 'saveajax'])->name('saveajax');
+Route::POST('/tablerecord', [App\Http\Controllers\Admin\ajaxController::class, 'tablerecord'])->name('tablerecord');
+Route::POST('/DeleteUser', [App\Http\Controllers\Admin\ajaxController::class, 'deletedata'])->name('DeleteUser');
+Route::POST('/getdetails', [App\Http\Controllers\Admin\ajaxController::class, 'GetUser'])->name('getdetails');
+Route::POST('/upajax', [App\Http\Controllers\Admin\ajaxController::class, 'upajax'])->name('upajax');
 
 
 });
