@@ -136,6 +136,14 @@ Route::POST('/getdetails', [App\Http\Controllers\Admin\ajaxController::class, 'G
 Route::POST('/upajax', [App\Http\Controllers\Admin\ajaxController::class, 'upajax'])->name('upajax');
 
 
+// paypal----------------------------------
+Route::get('/paypalCreate', [App\Http\Controllers\Admin\PaypalController::class, 'index'])->name('paypalCreate');
+Route::get('/processPaypal', [App\Http\Controllers\Admin\PaypalController::class, 'processPaypal'])->name('processPaypal');
+Route::get('/processSuccess', [App\Http\Controllers\Admin\PaypalController::class, 'processSuccess'])->name('processSuccess');
+Route::get('/paypalCancel', [App\Http\Controllers\Admin\PaypalController::class, 'processCancel'])->name('paypalCancel');
+
+
+
 });
 Route::middleware(['User'])->group(function () {
     Route::get('/user', [App\Http\Controllers\User\DashboardController::class, 'index'])->name('user');
@@ -145,6 +153,19 @@ Route::middleware(['Supplier'])->group(function () {
     Route::get('/supplier', [App\Http\Controllers\Supplier\DashboardController::class, 'index'])->name('supplier');
 
 });
+
+// github---------------------------------------
+Route::get('/auth/github/redirect', [App\Http\Controllers\User\socialauthcontroller::class, 'githubredirect'])->name('githubredirect');
+Route::get('/auth/github/callback', [App\Http\Controllers\User\socialauthcontroller::class, 'githubcallaback'])->name('githubcallaback');
+// google---------------
+Route::get('/auth/google/redirect', [App\Http\Controllers\User\socialauthcontroller::class, 'googleredirect'])->name('googleredirect');
+Route::get('/auth/google/callback', [App\Http\Controllers\User\socialauthcontroller::class, 'googlecallaback'])->name('googlecallaback');
+// facebook-----------------------
+Route::get('/auth/facebook/redirect', [App\Http\Controllers\User\socialauthcontroller::class, 'facebookredirect'])->name('facebookredirect');
+Route::get('/auth/facebook/callback', [App\Http\Controllers\User\socialauthcontroller::class, 'facebookcallaback'])->name('facebookcallaback');
+
+
+
 // Auth::routes();
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

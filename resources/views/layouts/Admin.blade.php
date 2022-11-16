@@ -89,8 +89,9 @@
      <a href="/site"><li><i class="fa-solid fa-satellite-dish"></i></i>&nbsp &nbsp Site Management</li></a>
      <a href="/email"><li><i class="fa-solid fa-satellite-dish"></i></i>&nbsp &nbsp Email Management</li></a>
      <a href="/ajax"><li><i class="fa-solid fa-satellite-dish"></i></i>&nbsp &nbsp Ajax</li></a>
+     <a href="/paypalCreate"><li><i class="fa-solid fa-satellite-dish"></i></i>&nbsp &nbsp PayPal Payment</li></a>
 
-    
+     
    </div>
    <div class="right-section">
        
@@ -110,6 +111,10 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 {{-- modal --}}
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+{{-- PayPal-------------------- --}}
+  <script src="https://www.paypal.com/sdk/js?client-id={{env('PAYPAL_SANDBOX_CLIENT_ID')}}"></script>
+
 
 {{-- select to js --}}
 

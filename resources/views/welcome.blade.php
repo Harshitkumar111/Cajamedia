@@ -27,6 +27,11 @@
                     @auth
                         <a href="{{ url('/home') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Home</a>
                     @else
+                    <a href="{{url('/auth/facebook/redirect')}}" class="text-sm text-gray-700 dark:text-gray-500 underline">facebook</a> &nbsp; &nbsp;
+
+                    <a href="{{url('/auth/google/redirect')}}" class="text-sm text-gray-700 dark:text-gray-500 underline">Google</a> &nbsp; &nbsp;
+
+                        <a href="{{url('/auth/github/redirect')}}" class="text-sm text-gray-700 dark:text-gray-500 underline">Github</a> &nbsp; &nbsp;
                         <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
 
                         @if (Route::has('register'))
