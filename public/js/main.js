@@ -83,8 +83,7 @@ function tablerecord(){
               url:'/DeleteUser',
               type:'POST',
               data: {
-                   'deleteid':deleteid,
-                 
+                   'deleteid':deleteid, 
                 },
               success:function(data){
                 alert('Delete Success')

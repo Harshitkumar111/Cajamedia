@@ -19,6 +19,8 @@ Route::get('/', function () {
 
 Auth::routes();
 
+Auth::routes(['verify'=> true]);
+
 Route::middleware(['Admin'])->group(function () {
     Route::get('/admin', [App\Http\Controllers\Admin\DashboardController::class, 'index'])->name('admin');
     Route::get('/member', [App\Http\Controllers\Admin\AddSupplierController::class, 'index'])->name('member');
