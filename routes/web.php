@@ -125,6 +125,10 @@ Route::get('/seo', [App\Http\Controllers\Admin\SEOManagementController::class, '
 Route::POST('/saveseo', [App\Http\Controllers\Admin\SEOManagementController::class, 'store'])->name('saveseo');
 
 // Email management----------------------------------------------------------
+
+
+
+
 Route::get('/email', [App\Http\Controllers\Admin\EmailManagementController::class, 'email'])->name('email');
 Route::get('/addemail', [App\Http\Controllers\Admin\EmailManagementController::class, 'addemail'])->name('addemail');
 Route::POST('/saveemail', [App\Http\Controllers\Admin\EmailManagementController::class, 'saveemail'])->name('saveemail');
