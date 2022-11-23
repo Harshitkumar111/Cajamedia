@@ -71,25 +71,26 @@
 </div>
     </header>
     {{-- <hr> --}}
-   <div class="left-section">
-     <a href="/admin"><li><i class="fa-solid fa-house-user" ></i>&nbsp &nbsp Dashboard</li> </a>
-     <a href="/fetchuser"><li><i class="fa-solid fa-recycle"></i>&nbsp &nbsp User Management</li></a>
-     <a href="/country"> <li><i class="fa-solid fa-globe"></i></i>&nbsp &nbsp Country</li></a>
-     <a href="/state"><li><i class="fa-regular fa-building"></i></i>&nbsp &nbsp State</li></a>
-     <a href="/city"><li><i class="fa-solid fa-city"></i>&nbsp &nbsp City</li></a>
-     <a href="/product"><li><i class="fa-solid fa-people-roof"></i></i>&nbsp &nbsp Manage Product</li></a>
-     <a href="/product_category"><li><i class="fa-solid fa-list-check"></i></i>&nbsp &nbsp Product Catagory</li></a>
-     <a href="/discount"><li><i class="fa-solid fa-percent"></i></i>&nbsp &nbsp Product Discount</li></a>
-     <a href="/order"><li><i class="fa-brands fa-first-order"></i></i>&nbsp &nbsp Management Order</li></a>
-     <a href="/payment"><li><i class="fa-brands fa-cc-amazon-pay"></i></i>&nbsp &nbsp Payment</li></a>
-     <a href="/contact"><li><i class="fa-solid fa-address-book"></i></i>&nbsp &nbsp contact Management</li></a>     
-     <a href="/page"><li><i class="fa-regular fa-address-card"></i></i>&nbsp &nbsp Pages Management</li></a>
-     <a href="/post"><li><i class="fa-solid fa-pager"></i></i>&nbsp &nbsp Post Management</li></a>
-     <a href="/seo"><li><i class="fa-solid fa-server"></i></i>&nbsp &nbsp SEO Management</li></a>
-     <a href="/site"><li><i class="fa-solid fa-satellite-dish"></i></i>&nbsp &nbsp Site Management</li></a>
-     <a href="/email"><li><i class="fa-solid fa-satellite-dish"></i></i>&nbsp &nbsp Email Management</li></a>
-     <a href="/ajax"><li><i class="fa-solid fa-satellite-dish"></i></i>&nbsp &nbsp Ajax</li></a>
-     <a href="/paypalCreate"><li><i class="fa-solid fa-satellite-dish"></i></i>&nbsp &nbsp PayPal Payment</li></a>
+   <div class="left-section " >
+    
+     <a href="/admin"  ><li class="{{(request()->segment(1) == 'admin') ? 'onactive' : '' }}"><i class="fa-solid fa-house-user" ></i>&nbsp &nbsp Dashboard</li> </a>
+     <a href="/fetchuser"><li  class="{{(request()->segment(1) == 'fetchuser') ? 'onactive' : '' }}"><i class="fa-solid fa-recycle"></i>&nbsp &nbsp User Management</li></a>
+     <a href="/country"> <li class="{{(request()->segment(1) == 'country') ? 'onactive' : '' }}"><i class="fa-solid fa-globe"></i></i>&nbsp &nbsp Country</li></a>
+     <a href="/state"><li class="{{(request()->segment(1) == 'state') ? 'onactive' : '' }}"><i class="fa-regular fa-building"></i></i>&nbsp &nbsp State</li></a>
+     <a href="/city"><li class="{{(request()->segment(1) == 'city') ? 'onactive' : '' }}"><i class="fa-solid fa-city"></i>&nbsp &nbsp City</li></a>
+     <a href="/product"><li class="{{(request()->segment(1) == 'product') ? 'onactive' : '' }}"><i class="fa-solid fa-people-roof"></i></i>&nbsp &nbsp Manage Product</li></a>
+     <a href="/product_category"><li class="{{(request()->segment(1) == 'product_category') ? 'onactive' : '' }}"><i class="fa-solid fa-list-check"></i></i>&nbsp &nbsp Product Catagory</li></a>
+     <a href="/discount"><li class="{{(request()->segment(1) == 'discount') ? 'onactive' : '' }}"><i class="fa-solid fa-percent"></i></i>&nbsp &nbsp Product Discount</li></a>
+     <a href="/order"><li class="{{(request()->segment(1) == 'order') ? 'onactive' : '' }}"><i class="fa-brands fa-first-order"></i></i>&nbsp &nbsp Management Order</li></a>
+     <a href="/payment"><li class="{{(request()->segment(1) == 'payment') ? 'onactive' : '' }}"><i class="fa-brands fa-cc-amazon-pay"></i></i>&nbsp &nbsp Payment</li></a>
+     <a href="/contact"><li class="{{(request()->segment(1) == 'contact') ? 'onactive' : '' }}"><i class="fa-solid fa-address-book"></i></i>&nbsp &nbsp contact Management</li></a>     
+     <a href="/page"><li class="{{(request()->segment(1) == 'page') ? 'onactive' : '' }}"><i class="fa-regular fa-address-card"></i></i>&nbsp &nbsp Pages Management</li></a>
+     <a href="/post"><li class="{{(request()->segment(1) == 'post') ? 'onactive' : '' }}"><i class="fa-solid fa-pager"></i></i>&nbsp &nbsp Post Management</li></a>
+     <a href="/seo"><li class="{{(request()->segment(1) == 'seo') ? 'onactive' : '' }}"><i class="fa-solid fa-server"></i></i>&nbsp &nbsp SEO Management</li></a>
+     <a href="/site"><li class="{{(request()->segment(1) == 'site') ? 'onactive' : '' }}"><i class="fa-solid fa-satellite-dish"></i></i>&nbsp &nbsp Site Management</li></a>
+     <a href="/email"><li class="{{(request()->segment(1) == 'email') ? 'onactive' : '' }}"><i class="fa-solid fa-satellite-dish"></i></i>&nbsp &nbsp Email Management</li></a>
+     <a href="/ajax"><li class="{{(request()->segment(1) == 'ajax') ? 'onactive' : '' }}"><i class="fa-solid fa-satellite-dish"></i></i>&nbsp &nbsp Ajax</li></a>
+     <a href="/paypalCreate"><li class="{{(request()->segment(1) == 'paypalCreate') ? 'onactive' : '' }}"><i class="fa-solid fa-satellite-dish"></i></i>&nbsp &nbsp PayPal Payment</li></a>
 
      
    </div>

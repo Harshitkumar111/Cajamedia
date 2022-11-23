@@ -29,6 +29,6 @@ class TestEmail extends Mailable
      */
     public function build()
     {
-        return $this->subject('Test Email')->view('Admin.Email_Management.test');
+        return $this->subject('Test Email')->view('Admin.Email_Management.Email_Formate');
     }
 }

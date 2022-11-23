@@ -26,7 +26,7 @@ public function saveemail(Request $request){
   $messages =$request->input('pagedescription');
   $name=$request->input('subject');
   $ms=strip_tags($messages);
-       
+    
  $mailData = [
     "name" => $name,
     "msg" => $ms,
