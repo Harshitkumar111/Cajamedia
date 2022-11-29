@@ -33,7 +33,7 @@ class LoginController extends Controller
         }if (auth()->user()->user_type == '1') {
             return '/supplier';
         }else{
-        return '/user';
+        return '/home';
         }
     }
 

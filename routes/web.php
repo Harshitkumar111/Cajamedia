@@ -172,6 +172,11 @@ Route::get('/auth/facebook/callback', [App\Http\Controllers\User\socialauthcontr
 
 
 
-// Auth::routes();
+// front end -------------------------
 
-// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [App\Http\Controllers\Frontend\HomeController::class, 'index'])->name('home');
+Route::get('/shop', [App\Http\Controllers\Frontend\ShopController::class, 'index'])->name('shop');
+Route::get('/shopdetail', [App\Http\Controllers\Frontend\ShopDetailController::class, 'index'])->name('shopdetail');
+Route::get('/cart', [App\Http\Controllers\Frontend\CartController::class, 'index'])->name('cart');
+Route::get('/checkout', [App\Http\Controllers\Frontend\CheckoutController::class, 'index'])->name('checkout');
+Route::get('/contact', [App\Http\Controllers\Frontend\ContactController::class, 'index'])->name('contact');
